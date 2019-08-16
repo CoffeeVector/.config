@@ -1,0 +1,6 @@
+configuration {
+    display-drun: "Apps";
+    display-window: "Window";
+    show-icons: true;
+    drun-icon-theme: "Papirus-Dark";
+}

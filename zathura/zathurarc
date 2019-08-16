@@ -1,0 +1,23 @@
+set font "Noto Mono for Powerline 12"
+set selection-clipboard clipboard
+#set incremental-search true
+
+#Coloring
+#set recolor true
+set default-bg "#272822"
+set default-fg "#a6e22e"
+
+set inputbar-fg "#66d9ef"
+set inputbar-bg "#272822"
+
+set index-fg "#66d9ef"
+set index-bg "#272822"
+set index-active-fg "#272822"
+set index-active-bg "#66d9ef"
+
+set statusbar-bg "#272822"
+set statusbar-fg "#f8f8f2"
+
+set recolor-darkcolor "#f8f8f2"
+set recolor-lightcolor "#272822"
+set recolor-keephue true

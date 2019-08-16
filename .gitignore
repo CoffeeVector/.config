@@ -1,0 +1,10 @@
+# Ignore everything
+/*
+
+!.gitignore
+!i3
+!polybar
+!zathura
+!dunst
+!rtv
+!rofi
