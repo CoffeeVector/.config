@@ -9,3 +9,5 @@
 !rtv
 !rofi
 !doc
+!nvim
+nvim/plugged
