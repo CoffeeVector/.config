@@ -1,8 +1,2 @@
 rofi.modi: ssh,window,drun,run
 rofi.theme: ~/.config/rofi/themes/default.rasi
-
-rofi.color-normal: argb:00272822,foregr,argb:00272822,col4,backgr
-rofi.color-active: argb:E6272822,col4,argb:E6272822,col4,argb:E6272822
-rofi.color-window: argb:E6272822,argb:E6272822,argb:E6272822,argb:E6272822
-rofi.kb-accept-entry-continue: Shift+Return
-rofi.font: Noto Mono for Powerline 30
