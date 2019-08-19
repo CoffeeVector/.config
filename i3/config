@@ -68,8 +68,8 @@ bindsym $mod+equal exec ~/scripts/light/lightIncrease.sh
 # #Increases the brightness
 bindsym $mod+F1 exec ~/scripts/rice-readme/rice-readme.sh
 # #Compiles and displays readme based on i3 config
-#bindsym $mod+g exec ~/scripts/gchrome/gchrome.sh
-bindsym $mod+g exec ~/scripts/surf-scripts/surf.sh
+bindsym $mod+g exec ~/scripts/gchrome/gchrome.sh
+#bindsym $mod+g exec ~/scripts/surf-scripts/surf.sh
 # #Opens google-chrome menu.
 bindsym $mod+Shift+g exec ~/scripts/otflatex/otflatexgen.sh
 # #On-the-fly latex. Opens a vim where you can enter latex math, then the pdf will be converted into a png and placed into clipboard.
