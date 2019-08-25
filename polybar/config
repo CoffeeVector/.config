@@ -48,7 +48,7 @@ font-2 = Noto Emoji:scale=10;
 
 modules-left = i3
 modules-center =
-modules-right = filesystem restic orientation dunst volume memory cpu battery sensors-temperature date
+modules-right = filesystem restic orientation brightness dunst volume memory cpu battery sensors-temperature date
 
 tray-position = right
 tray-padding = 2
@@ -253,6 +253,11 @@ initial = 2
 click-left = polybar-msg hook dunst 2
 click-right = polybar-msg hook dunst 1
 format-underline = #ae81ff
+
+[module/brightness]
+type = custom/ipc
+hook-0 = light -G | sed 's/[.].*$//' | awk '{print "💡", $1 "%"}'
+initial = 1
 
 [settings]
 screenchange-reload = true
