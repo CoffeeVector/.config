@@ -1,15 +1,16 @@
 # Ignore everything
 /*
 
-!.gitignore
-!i3
-!polybar
-!zathura
-!dunst
-!rtv
-!rofi
 !doc
-!nvim
+!dunst
+!.gitignore
 !gtk-3.0
 !gtk-2.0
+!i3
+!nvim
 nvim/plugged
+!polybar
+!ranger
+!rofi
+!rtv
+!zathura
