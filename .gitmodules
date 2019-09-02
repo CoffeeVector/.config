@@ -1,6 +1,3 @@
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/coffeevector/.vim.git
-[submodule "ranger"]
-	path = ranger
-	url = https://github.com/coffeevector/ranger-dotfiles.git
