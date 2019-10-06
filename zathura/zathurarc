@@ -1,4 +1,4 @@
-set font "Noto Mono for Powerline 12"
+set font "Noto Mono 12"
 set selection-clipboard clipboard
 #set incremental-search true
 
