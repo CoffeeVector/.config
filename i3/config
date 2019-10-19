@@ -101,7 +101,9 @@ bindsym $mod+t exec ~/scripts/touchpad/touchpad.sh
 # #Enable or disable touchpad.
 bindsym $mod+Shift+t exec ~/scripts/theming/theming.sh
 # #Changes the theme of the desktop environment. Changes the background and the lockscreen.
-bindsym $mod+Tab exec ~/scripts/computer/computer.sh
+bindsym $mod+Tab exec ~/scripts/computer/miscellaneous.sh
+# #Miscellaneous options such as undervolt, monitor,and lock
+bindsym $mod+Shift+Tab exec ~/scripts/computer/computer.sh
 # #Options such as shutdown, reboot, and lockscreen.
 bindsym $mod+w exec rofi -show window
 # #Dmenu windows.
