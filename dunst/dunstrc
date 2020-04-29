@@ -312,3 +312,7 @@ timeout = 15
 #    summary = "foobar"
 #    history_ignore = yes
 # vim: ft=cfg
+
+[play_sound]
+    summary = "*"
+    script = /home/coffeevector/Notifications/notification-sound.sh
