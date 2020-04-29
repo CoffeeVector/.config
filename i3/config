@@ -6,10 +6,16 @@ set $alt Mod1
 #Start up programs
 assign [class = "discord"] 10
 exec discord
+
 assign [title = "weechat"] 9
-exec x-terminal-emulator -e weechat
+#exec x-terminal-emulator -e weechat
+
+assign [title = "qTox"] 9
+exec qtox
+
 assign [title = "newsboat"] 8
 exec x-terminal-emulator -e newsboat
+
 exec --no-startup-id nm-applet
 exec dunst
 
