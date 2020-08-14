@@ -1,0 +1,38 @@
+! special
+#define foregr  #f8f8f2
+#define backgr  #272822
+! #define curCol  #b3e5ef
+#define curCol  #f8f8f2
+
+! black
+#define col0    #272822
+#define col8    #272822
+
+! red
+#define col1    #f92672
+#define col9    #f92672
+
+! green
+#define col2    #a6e22e
+#define col10   #a6e22e
+
+! yellow
+#define col3    #f4bf75
+#define col11   #f4bf75
+
+! blue
+#define col4    #66d9ef
+#define col12   #66d9ef
+
+! magenta
+#define col5    #ae81ff
+#define col13   #ae81ff
+
+! cyan
+#define col6    #a1efe4
+#define col14   #a1efe4
+
+! white
+#define col7    #f8f8f2
+#define col15   #f9f8f5
+

@@ -17,7 +17,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/bar]
-monitor = ${env:MONITOR:eDP-1-1}
+monitor = ${env:MONITOR:eDP1}
 width = 100%
 height = 70
 ;offset-x = 1% offset-y = 1%
@@ -229,7 +229,7 @@ format-warn-underline = ${self.format-underline}
 
 [module/orientation]
 type = custom/ipc
-hook-0 = i3-msg -t get_tree | python ~/scripts/i3-polybar-orientation/get-layout-focused.py
+hook-0 = i3-msg -t get_tree | python3 ~/scripts/i3-polybar-orientation/get-layout-focused.py
 
 click-left = polybar-msg hook orientation 1
 format-underline = #66d9ef
@@ -256,7 +256,7 @@ format-underline = #ae81ff
 
 [module/brightness]
 type = custom/ipc
-hook-0 = light -G | sed 's/[.].*$//' | awk '{print "💡", $1 "%"}'
+hook-0 = xbacklight -get | sed 's/[.].*$//' | awk '{print "💡", $1 "%"}'
 initial = 1
 
 [settings]

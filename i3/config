@@ -8,20 +8,20 @@ assign [class = "discord"] 10
 exec discord
 
 assign [title = "weechat"] 9
-#exec x-terminal-emulator -e weechat
+#exec st -e weechat
 
 assign [title = "qTox"] 9
 exec qtox
 
 assign [title = "newsboat"] 8
-exec x-terminal-emulator -e newsboat
+exec st -e newsboat
 
 exec --no-startup-id nm-applet
 exec dunst
 
 #AESTHETIC
-exec_always compton --config=/home/coffeevector/.config/compton/compton.conf
-exec_always --no-startup-id feh --bg-fill '/home/coffeevector/Pictures/Themes/Wallpaper.png'
+exec_always picom --config=/home/coffeevector/.config/compton/compton.conf
+exec_always --no-startup-id feh --bg-fill '/home/coffeevector/pictures/Themes/Wallpaper.png'
 exec --no-startup-id i3-battery-popup -N
 exec_always --no-startup-id polybar -l error bar -c $HOME/.config/polybar/config
 default_border none
@@ -47,26 +47,26 @@ set_from_resource $white color7
 #set_from_resource $white color15
 
 # HOTKEYS
-bindsym Control+Shift+Escape exec x-terminal-emulator -e htop
+bindsym Control+Shift+Escape exec st -e htop
 # #Opens a new terminal and runs htop in it. htop is a kind of taskmanager
-bindsym Control+$alt+t exec x-terminal-emulator
+bindsym Control+$alt+t exec st
 # #Old syntax for opening a new terminal. $mod+Return should be preferred above Control+$alt+t.
 bindsym Control+Shift+x exec gyazo
 # #Screenshot
-bindsym $mod+apostrophe exec x-terminal-emulator -e ranger ~/Projects
+bindsym $mod+apostrophe exec st -e ranger ~/Projects
 # #Lists all directories in ~/Projects/ in dmenu, and opens selected in ranger
 bindsym $mod+b exec ~/scripts/light/light.sh
 # #Changes brightness
 bindsym $mod+Shift+b exec ~/scripts/backup/backup.sh
 # #Backup tool. Opens a dmenu of options such as backup, forget, snapshot, and prune.
-bindsym $mod+backslash exec x-terminal-emulator -e vim
+bindsym $mod+backslash exec st -e vim
 # #Opens a quick vim with no file attached to it.
 #bindsym $mod+d exec dmenu_run
 bindsym $mod+d exec rofi -show drun
 # #Opens a dmenu that lets you run applications
 #bindsym $mod+Shift+d exec ~/scripts/keyboard/keyboard.sh
 #WIP. Opens dmenu that switches keyboard layout
-bindsym $mod+e exec x-terminal-emulator -e ranger
+bindsym $mod+e exec st -e ranger
 # #Opens ranger in the home directory.
 bindsym $mod+Shift+equal exec ~/scripts/volume/volumeIncrease.sh
 # # Volume increase
@@ -89,17 +89,17 @@ bindsym $mod+m exec ~/scripts/dmenuCalc/dmenuCalc.sh
 # #Opens a menu that lets you do calculatiosn
 bindsym $mod+n exec st -e newsboat
 # #Opens newsboat rss feed
-bindsym $mod+Shift+p exec x-terminal-emulator -e ranger ~/Professional
+bindsym $mod+Shift+p exec st -e ranger ~/Professional
 # #Lists all directories in ~/Professional/ in dmenu, and opens selected in ranger
-bindsym $mod+r exec x-terminal-emulator -e rtv
+bindsym $mod+r exec st -e rtv
 # #Opens reddit in terminal
-bindsym $mod+Return exec x-terminal-emulator
+bindsym $mod+Return exec st
 # #Opens new terminal
-bindsym $mod+Shift+Return exec x-terminal-emulator -e python3 ~/Projects/acmd/main.py
+bindsym $mod+Shift+Return exec st -e python3 ~/Projects/acmd/main.py
 # #Opens fish terminal
 bindsym $mod+s exec rofi -show ssh
 # #Opens ssh
-bindsym $mod+semicolon exec x-terminal-emulator -e ranger ~/Academics/Current/
+bindsym $mod+semicolon exec st -e ranger ~/Academics/Current/
 # #Lists all directories in ~/Academics/ in dmenu, and opens selected in ranger
 bindsym $mod+slash exec ~/scripts/todo/todo.sh
 # #Opens todo app. A dmeny listing opens such as read, add/edit, delete, and drive push.
@@ -113,7 +113,7 @@ bindsym $mod+Shift+Tab exec ~/scripts/computer/computer.sh
 # #Options such as shutdown, reboot, and lockscreen.
 bindsym $mod+w exec rofi -show window
 # #Dmenu windows.
-bindsym $mod+x exec x-terminal-emulator -e weechat
+bindsym $mod+x exec st -e weechat
 # #Opens weechat
 
 # MOTION BEHAVIOR

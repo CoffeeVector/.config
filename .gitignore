@@ -13,4 +13,6 @@ nvim/plugged
 !ranger
 !rofi
 !rtv
+!.Xresources
+!.Xresources.d
 !zathura

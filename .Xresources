@@ -1,0 +1,6 @@
+#include ".Xresources.d/theme.txt"
+#include ".Xresources.d/colors"
+##include ".Xresources.d/urxvt"
+#include ".Xresources.d/rofi"
+#include ".Xresources.d/st"
+Xft.dpi: 192
