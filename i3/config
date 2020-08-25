@@ -16,14 +16,11 @@ exec qtox
 assign [title = "newsboat"] 8
 exec st -e newsboat
 
-exec --no-startup-id nm-applet
-exec dunst
-
 #AESTHETIC
-exec_always picom --config=/home/coffeevector/.config/compton/compton.conf
-exec_always --no-startup-id feh --bg-fill '/home/coffeevector/pictures/Themes/Wallpaper.png'
 exec --no-startup-id i3-battery-popup -N
-exec_always --no-startup-id polybar -l error bar -c $HOME/.config/polybar/config
+
+exec_always --no-startup-id polybar -l error bar -c /home/coffeevector/.config/polybar/config
+
 default_border none
 font pango:Noto Mono Regular 11
 # setting Xresources colors
@@ -51,9 +48,8 @@ bindsym Control+Shift+Escape exec st -e htop
 # #Opens a new terminal and runs htop in it. htop is a kind of taskmanager
 bindsym Control+$alt+t exec st
 # #Old syntax for opening a new terminal. $mod+Return should be preferred above Control+$alt+t.
-bindsym Control+Shift+x exec gyazo
-# #Screenshot
-bindsym $mod+apostrophe exec st -e ranger ~/Projects
+# bindsym Print exec ~/scripts/screenshot/screenshot.sh # #Screenshot
+bindsym $mod+apostrophe exec st -e ranger ~/projects
 # #Lists all directories in ~/Projects/ in dmenu, and opens selected in ranger
 bindsym $mod+b exec ~/scripts/light/light.sh
 # #Changes brightness
@@ -74,9 +70,6 @@ bindsym $mod+equal exec ~/scripts/light/lightIncrease.sh
 # #Increases the brightness
 bindsym $mod+F1 exec ~/scripts/rice-readme/rice-readme.sh
 # #Compiles and displays readme based on i3 config
-bindsym $mod+g exec ~/scripts/gchrome/gchrome.sh
-#bindsym $mod+g exec ~/scripts/surf-scripts/surf.sh
-# #Opens google-chrome menu.
 bindsym $mod+Shift+g exec ~/scripts/otflatex/otflatexgen.sh
 # #On-the-fly latex. Opens a vim where you can enter latex math, then the pdf will be converted into a png and placed into clipboard.
 bindsym $mod+Control+Shift+minus exec ~/scripts/volume/mute.sh
@@ -93,13 +86,13 @@ bindsym $mod+Shift+p exec st -e ranger ~/Professional
 # #Lists all directories in ~/Professional/ in dmenu, and opens selected in ranger
 bindsym $mod+r exec st -e rtv
 # #Opens reddit in terminal
-bindsym $mod+Return exec st
+# bindsym $mod+Return exec st
 # #Opens new terminal
 bindsym $mod+Shift+Return exec st -e python3 ~/Projects/acmd/main.py
 # #Opens fish terminal
 bindsym $mod+s exec rofi -show ssh
 # #Opens ssh
-bindsym $mod+semicolon exec st -e ranger ~/Academics/Current/
+bindsym $mod+semicolon exec st -e ranger ~/academics
 # #Lists all directories in ~/Academics/ in dmenu, and opens selected in ranger
 bindsym $mod+slash exec ~/scripts/todo/todo.sh
 # #Opens todo app. A dmeny listing opens such as read, add/edit, delete, and drive push.
@@ -170,8 +163,6 @@ bindsym $mod+f fullscreen toggle
 # #Toggles fullscreen for container
 # change container layout (stacked, tabbed, toggle split)
 #bindsym $mod+Shift+s layout stacking
-bindsym $mod+Shift+s exec ~/scripts/gchrome/gchrome.sh
-# #Runs surf
 bindsym $mod+Shift+w layout tabbed
 bindsym $mod+Shift+f layout toggle split
 # toggle tiling / floating
