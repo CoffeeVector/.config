@@ -220,7 +220,7 @@ animation-charging-framerate = 750
 [module/sensors-temperature]
 type = custom/script
 #exec = sensors | grep Core | awk '{print substr($3, 2, length($3)-6)}' | tr "\\n" " " | sed 's/ /°C  /g' | sed 's/  $//'
-exec = sensors | grep CPU | awk '{print substr($2,2, length($2))}'
+exec = sensors | grep Core | awk '{print $3}' | tr '\n' ' ' | sed 's/+//g' | sed "s/\.0//g"
 interval = 2
 
 format-underline = #f50a4d

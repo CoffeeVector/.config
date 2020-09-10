@@ -1,0 +1,58 @@
+# Binds
+
+super + Return
+    $TERM
+
+Print
+    $HOME/scripts/screenshot/screenshot.sh
+
+super + p
+    $TERM -e "python"
+
+control + shift + Escape
+    $TERM -e htop
+
+super + backslash
+    $TERM -e nvim
+
+super + d
+    rofi -show drun
+
+super + e
+    $TERM -e ranger
+
+super + plus
+    $HOME/scripts/volume/lightIncrease.sh
+
+super + minus
+    $HOME/scripts/volume/lightDecrease.sh
+
+super + shift + plus
+    $HOME/scripts/volume/volumeIncrease.sh
+
+super + shift + minus
+    $HOME/scripts/volume/volumeDecrease.sh
+
+super + shift + g
+    $HOME/bin/scripts/otflatex.sh
+
+super + m 
+    $HOME/scripts/dmenuCalc/dmenuCalc.sh
+
+super + r
+    $TERM -e rtv
+
+super + s
+    rofi -show ssh
+
+super + /
+    $HOME/scripts/todo/todo.sh
+
+super + shift + t
+    $HOME/scripts/touchpad/touchpad.sh
+
+super + Tab
+    $HOME/scripts/computer/miscellaneous.sh
+
+super + w
+    rofi -show window

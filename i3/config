@@ -5,7 +5,7 @@ set $alt Mod1
 
 #Start up programs
 assign [class = "discord"] 10
-exec discord
+# exec discord
 
 assign [title = "weechat"] 9
 #exec st -e weechat
@@ -20,6 +20,8 @@ exec st -e newsboat
 exec --no-startup-id i3-battery-popup -N
 
 exec_always --no-startup-id polybar -l error bar -c /home/coffeevector/.config/polybar/config
+
+exec_always --no-startup-id sxhkd
 
 default_border none
 font pango:Noto Mono Regular 11
@@ -44,70 +46,8 @@ set_from_resource $white color7
 #set_from_resource $white color15
 
 # HOTKEYS
-bindsym Control+Shift+Escape exec st -e htop
-# #Opens a new terminal and runs htop in it. htop is a kind of taskmanager
-bindsym Control+$alt+t exec st
-# #Old syntax for opening a new terminal. $mod+Return should be preferred above Control+$alt+t.
-# bindsym Print exec ~/scripts/screenshot/screenshot.sh # #Screenshot
-bindsym $mod+apostrophe exec st -e ranger ~/projects
-# #Lists all directories in ~/Projects/ in dmenu, and opens selected in ranger
-bindsym $mod+b exec ~/scripts/light/light.sh
-# #Changes brightness
-bindsym $mod+Shift+b exec ~/scripts/backup/backup.sh
-# #Backup tool. Opens a dmenu of options such as backup, forget, snapshot, and prune.
-bindsym $mod+backslash exec st -e vim
-# #Opens a quick vim with no file attached to it.
-#bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show drun
-# #Opens a dmenu that lets you run applications
-#bindsym $mod+Shift+d exec ~/scripts/keyboard/keyboard.sh
-#WIP. Opens dmenu that switches keyboard layout
-bindsym $mod+e exec st -e ranger
-# #Opens ranger in the home directory.
-bindsym $mod+Shift+equal exec ~/scripts/volume/volumeIncrease.sh
-# # Volume increase
-bindsym $mod+equal exec ~/scripts/light/lightIncrease.sh
-# #Increases the brightness
 bindsym $mod+F1 exec ~/scripts/rice-readme/rice-readme.sh
 # #Compiles and displays readme based on i3 config
-bindsym $mod+Shift+g exec ~/scripts/otflatex/otflatexgen.sh
-# #On-the-fly latex. Opens a vim where you can enter latex math, then the pdf will be converted into a png and placed into clipboard.
-bindsym $mod+Control+Shift+minus exec ~/scripts/volume/mute.sh
-# # Mutes
-bindsym $mod+Shift+minus exec ~/scripts/volume/volumeDecrease.sh
-# #Decreases the volume
-bindsym $mod+minus exec ~/scripts/light/lightDecrease.sh
-# #Decreases the brightness.
-bindsym $mod+m exec ~/scripts/dmenuCalc/dmenuCalc.sh
-# #Opens a menu that lets you do calculatiosn
-bindsym $mod+n exec st -e newsboat
-# #Opens newsboat rss feed
-bindsym $mod+Shift+p exec st -e ranger ~/Professional
-# #Lists all directories in ~/Professional/ in dmenu, and opens selected in ranger
-bindsym $mod+r exec st -e rtv
-# #Opens reddit in terminal
-# bindsym $mod+Return exec st
-# #Opens new terminal
-bindsym $mod+Shift+Return exec st -e python3 ~/Projects/acmd/main.py
-# #Opens fish terminal
-bindsym $mod+s exec rofi -show ssh
-# #Opens ssh
-bindsym $mod+semicolon exec st -e ranger ~/academics
-# #Lists all directories in ~/Academics/ in dmenu, and opens selected in ranger
-bindsym $mod+slash exec ~/scripts/todo/todo.sh
-# #Opens todo app. A dmeny listing opens such as read, add/edit, delete, and drive push.
-bindsym $mod+t exec ~/scripts/touchpad/touchpad.sh
-# #Enable or disable touchpad.
-bindsym $mod+Shift+t exec ~/scripts/theming/theming.sh
-# #Changes the theme of the desktop environment. Changes the background and the lockscreen.
-bindsym $mod+Tab exec ~/scripts/computer/miscellaneous.sh
-# #Miscellaneous options such as undervolt, monitor,and lock
-bindsym $mod+Shift+Tab exec ~/scripts/computer/computer.sh
-# #Options such as shutdown, reboot, and lockscreen.
-bindsym $mod+w exec rofi -show window
-# #Dmenu windows.
-bindsym $mod+x exec st -e weechat
-# #Opens weechat
 
 # MOTION BEHAVIOR
 # kill focused window

@@ -16,4 +16,4 @@
     ui = true
     pager = true
 [pull]
-	rebase = false
+    rebase = false
