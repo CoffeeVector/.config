@@ -36,7 +36,7 @@ super + shift + minus
 super + shift + g
     $HOME/bin/scripts/otflatex.sh
 
-super + m 
+super + m
     $HOME/scripts/dmenuCalc/dmenuCalc.sh
 
 super + r
@@ -45,7 +45,7 @@ super + r
 super + s
     rofi -show ssh
 
-super + /
+super + slash
     $HOME/scripts/todo/todo.sh
 
 super + shift + t
