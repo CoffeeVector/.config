@@ -1,6 +1,7 @@
 # Ignore everything
 /*
 !git
+!compton
 !doc
 !dunst
 !.gitignore
