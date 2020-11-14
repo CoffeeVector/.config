@@ -1,13 +1,7 @@
 # Binds
 
-super + Return
-    $TERM
-
 Print
-    $HOME/scripts/screenshot/screenshot.sh
-
-super + p
-    $TERM -e "python"
+    $HOME/bin/scripts/screenshot.sh
 
 control + shift + Escape
     $TERM -e htop
@@ -15,17 +9,14 @@ control + shift + Escape
 super + backslash
     $TERM -e nvim
 
-super + d
-    rofi -show drun
-
 super + e
     $TERM -e ranger
 
-super + plus
-    $HOME/scripts/volume/lightIncrease.sh
+super + equal
+    $HOME/scripts/light/lightIncrease.sh
 
 super + minus
-    $HOME/scripts/volume/lightDecrease.sh
+    $HOME/scripts/light/lightDecrease.sh
 
 super + shift + plus
     $HOME/scripts/volume/volumeIncrease.sh
@@ -53,6 +44,9 @@ super + shift + t
 
 super + Tab
     $HOME/scripts/computer/miscellaneous.sh
+
+super + shift + Tab
+    $HOME/scripts/computer/computer.sh
 
 super + w
     rofi -show window

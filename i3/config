@@ -47,6 +47,8 @@ set_from_resource $white color7
 
 # HOTKEYS
 bindsym $mod+F1 exec ~/scripts/rice-readme/rice-readme.sh
+bindsym $mod+Return exec st
+bindsym $mod+d exec dmenu_run
 # #Compiles and displays readme based on i3 config
 
 # MOTION BEHAVIOR
